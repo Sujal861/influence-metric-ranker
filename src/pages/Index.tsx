@@ -6,6 +6,7 @@ import { getTopInfluencers, getTrendingInfluencers } from '@/lib/mockData';
 import Navigation from '@/components/Navigation';
 import SearchBar from '@/components/SearchBar';
 import InfluencerCard from '@/components/InfluencerCard';
+import ThreeDSphere from '@/components/ThreeDSphere';
 import { cn } from '@/lib/utils';
 
 export default function Index() {
@@ -47,29 +48,31 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black text-white overflow-x-hidden">
       <Navigation />
       
       {/* Hero Section */}
       <section className="pt-28 pb-16 px-4 md:px-6 lg:pt-32 lg:pb-24 relative overflow-hidden">
-        <div className="absolute inset-0 z-[-1] bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-950" aria-hidden="true" />
+        <div className="absolute inset-0 z-[-1]" aria-hidden="true">
+          <ThreeDSphere />
+        </div>
         
         <div className="max-w-5xl mx-auto text-center">
           <div className={cn(
             "space-y-6 transition-all duration-700",
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           )}>
-            <div className="inline-block mb-4 px-3 py-1 bg-influence-accent/10 rounded-full">
+            <div className="inline-block mb-4 px-3 py-1 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
               <span className="text-influence-accent text-sm font-medium">
                 A New Standard of Influence
               </span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-              Discover Who <span className="text-influence-accent">Really</span> Makes an Impact
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gradient">
+              Discover Who <span className="text-influence-accent glow">Really</span> Makes an Impact
             </h1>
             
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
               InfluenceIQ goes beyond follower counts and viral moments to measure true lasting impact, 
               credibility, and relevance across industries.
             </p>
@@ -81,13 +84,13 @@ export default function Index() {
               />
             </div>
             
-            <div className="flex flex-wrap justify-center items-center gap-3 pt-2 text-sm text-muted-foreground">
+            <div className="flex flex-wrap justify-center items-center gap-3 pt-2 text-sm text-white/60">
               <span>Try searching:</span>
               {["Technology", "Health", "Finance", "Design", "Environment"].map((term) => (
                 <Link 
                   key={term}
                   to={`/search?q=${term}`}
-                  className="px-3 py-1 rounded-full border border-border hover:border-influence-accent hover:text-influence-accent transition-colors duration-200"
+                  className="px-3 py-1 rounded-full border border-white/10 hover:border-influence-accent hover:text-influence-accent transition-colors duration-200"
                 >
                   {term}
                 </Link>
@@ -98,13 +101,13 @@ export default function Index() {
       </section>
       
       {/* Features Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-black">
         <div className="content-container">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4 animate-fade-in opacity-0" style={{ animationDelay: "100ms", animationFillMode: "forwards" }}>
               Beyond Likes and Views
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
+            <p className="text-lg text-white/70 max-w-3xl mx-auto animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
               Our methodology prioritizes what truly matters: sustained relevance, credibility, and genuine impact.
             </p>
           </div>
@@ -113,7 +116,7 @@ export default function Index() {
             {features.map((feature, index) => (
               <div 
                 key={index} 
-                className="relative p-6 border border-border rounded-xl bg-white dark:bg-gray-900 shadow-subtle hover:shadow-elevated transition-all duration-300 animate-fade-in opacity-0"
+                className="relative p-6 border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm hover:border-white/20 transition-all duration-300 animate-fade-in opacity-0 card-3d"
                 style={{ animationDelay: `${300 + index * 100}ms`, animationFillMode: "forwards" }}
               >
                 <div className={cn(
@@ -123,7 +126,7 @@ export default function Index() {
                   <feature.icon className="h-5 w-5 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mt-4 mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <p className="text-white/70">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -131,14 +134,14 @@ export default function Index() {
       </section>
       
       {/* Top Influencers Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 bg-gray-950">
         <div className="content-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
             <div>
               <h2 className="text-3xl font-bold mb-2 animate-fade-in opacity-0" style={{ animationDelay: "100ms", animationFillMode: "forwards" }}>
                 Highest-Rated Influencers
               </h2>
-              <p className="text-muted-foreground animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
+              <p className="text-white/70 animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
                 See who ranks at the top based on our comprehensive scoring system
               </p>
             </div>
@@ -165,14 +168,14 @@ export default function Index() {
       </section>
       
       {/* Trending Influencers Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-black">
         <div className="content-container">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
             <div>
               <h2 className="text-3xl font-bold mb-2 animate-fade-in opacity-0" style={{ animationDelay: "100ms", animationFillMode: "forwards" }}>
                 Trending This Month
               </h2>
-              <p className="text-muted-foreground animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
+              <p className="text-white/70 animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
                 Influencers showing significant growth in impact and relevance
               </p>
             </div>
@@ -200,13 +203,15 @@ export default function Index() {
       
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 z-[-1] bg-gradient-to-tr from-influence-accent/20 via-white to-influence-secondaryAccent/20 dark:from-influence-accent/10 dark:via-gray-900 dark:to-influence-secondaryAccent/10" aria-hidden="true" />
+        <div className="absolute inset-0 z-[-1] bg-blue-900/10" aria-hidden="true">
+          <ThreeDSphere className="opacity-50" />
+        </div>
         
         <div className="content-container text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in opacity-0" style={{ animationDelay: "100ms", animationFillMode: "forwards" }}>
             Discover the New Standard of Influence Measurement
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
+          <p className="text-lg text-white/70 mb-8 animate-fade-in opacity-0" style={{ animationDelay: "200ms", animationFillMode: "forwards" }}>
             Explore our methodology and learn how we're redefining what it means to be truly influential in today's world.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: "300ms", animationFillMode: "forwards" }}>
@@ -218,7 +223,7 @@ export default function Index() {
             </Link>
             <Link 
               to="/methodology" 
-              className="px-6 py-3 bg-white dark:bg-gray-800 rounded-lg font-medium border border-border hover:border-influence-accent transition-colors"
+              className="px-6 py-3 bg-white/5 backdrop-blur-md rounded-lg font-medium border border-white/10 hover:border-white/20 transition-colors"
             >
               Learn Our Methodology
             </Link>
@@ -227,7 +232,7 @@ export default function Index() {
       </section>
       
       {/* Footer */}
-      <footer className="py-10 border-t border-border">
+      <footer className="py-10 border-t border-white/10">
         <div className="content-container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
@@ -235,18 +240,18 @@ export default function Index() {
                 <span className="text-influence-accent">Influence</span>
                 <span className="font-bold">IQ</span>
               </div>
-              <p className="text-muted-foreground text-sm mt-1">
+              <p className="text-white/50 text-sm mt-1">
                 © {new Date().getFullYear()} • The new standard for measuring influence
               </p>
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link to="/methodology" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/methodology" className="text-white/50 hover:text-white transition-colors">
                 Methodology
               </Link>
-              <Link to="/search" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/search" className="text-white/50 hover:text-white transition-colors">
                 Explore
               </Link>
-              <Link to="#" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="#" className="text-white/50 hover:text-white transition-colors">
                 About
               </Link>
             </div>

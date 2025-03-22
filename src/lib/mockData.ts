@@ -36,7 +36,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "1",
     name: "Elon Musk",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg",
+    imageUrl: "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1215690299.jpg",
     title: "Tech Entrepreneur & Space Innovator",
     biography: "Elon Musk is the founder, CEO, and chief engineer of SpaceX; angel investor, CEO, and product architect of Tesla, Inc.; owner and CTO of Twitter; founder of The Boring Company; co-founder of Neuralink and OpenAI; and president of the philanthropic Musk Foundation.",
     metrics: {
@@ -61,7 +61,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "2",
     name: "Taylor Swift",
-    imageUrl: "https://media.vogue.co.uk/photos/649ec360f7a33b9a2e5fdb24/2:3/w_2560%2Cc_limit/GettyImages-1482795808.jpg",
+    imageUrl: "https://media.architecturaldigest.com/photos/65081c26d91ff23e6cc3fb86/16:9/w_2560%2Cc_limit/GettyImages-1704364140.jpg",
     title: "Music Icon & Cultural Phenomenon",
     biography: "Taylor Swift is one of the most influential musicians of her generation, winning numerous awards including multiple Grammy Awards. Her evolution from country to pop has showcased her versatility and business acumen in the music industry.",
     metrics: {
@@ -86,7 +86,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "3",
     name: "LeBron James",
-    imageUrl: "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
+    imageUrl: "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-08/LeBron-James-100622-GETTY-FTR.jpg",
     title: "Basketball Legend & Social Activist",
     biography: "LeBron James is widely considered one of the greatest basketball players of all time. Beyond his athletic achievements, he has become a prominent voice on social issues and an entrepreneur with investments spanning media, sports, and education.",
     metrics: {
@@ -111,7 +111,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "4",
     name: "Oprah Winfrey",
-    imageUrl: "https://cdn.britannica.com/91/215191-050-E1EXCE0P/American-television-personality-entrepreneur-Oprah-Winfrey-2018.jpg",
+    imageUrl: "https://pyxis.nymag.com/v1/imgs/809/f97/e25ae3d994e13b3c8bdf15931728a2bd9e-oprah-winfrey.2x.rsquare.w536.jpg",
     title: "Media Executive & Philanthropist",
     biography: "Oprah Winfrey is a talk show host, television producer, actress, author, and philanthropist. She is best known for her talk show, The Oprah Winfrey Show, which was the highest-rated television program of its kind and ran for 25 years.",
     metrics: {
@@ -136,7 +136,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "5",
     name: "Cristiano Ronaldo",
-    imageUrl: "https://s.hs-data.com/bilder/spieler/gross/13029.jpg",
+    imageUrl: "https://i.guim.co.uk/img/media/49fe41f27e21f8493e8b5400f1b3c67de64f5c85/0_94_4278_2566/master/4278.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=3f67c5d08d8aeff66f5c829f2f24b5cd",
     title: "Football Superstar & Global Icon",
     biography: "Cristiano Ronaldo is one of the most famous athletes in the world. The Portuguese footballer has broken numerous records throughout his career with Manchester United, Real Madrid, Juventus, and the Portugal national team, becoming one of the most marketable athletes ever.",
     metrics: {
@@ -161,7 +161,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "6",
     name: "Malala Yousafzai",
-    imageUrl: "https://malala.org/app/uploads/2021/09/F-About-Malala.jpg",
+    imageUrl: "https://people.com/thmb/5OT5-F83U9vgbjrKhBfW2bTgCb0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(674x51:676x53)/malala-yousafzai-2000-2a87eb21b1c142d39c9c74ed2882bc19.jpg",
     title: "Education Activist & Nobel Laureate",
     biography: "Malala Yousafzai is a Pakistani activist for female education and the youngest Nobel Prize laureate. She is known for human rights advocacy, especially the education of women and children in her native region of northwest Pakistan.",
     metrics: {
