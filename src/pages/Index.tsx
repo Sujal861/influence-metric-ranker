@@ -15,8 +15,8 @@ export default function Index() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    setTopInfluencers(getTopInfluencers(3));
-    setTrendingInfluencers(getTrendingInfluencers(3));
+    setTopInfluencers(getTopInfluencers(9));
+    setTrendingInfluencers(getTrendingInfluencers(9));
     
     // Simulate loading for smoother animations
     const timer = setTimeout(() => {
@@ -86,7 +86,7 @@ export default function Index() {
             
             <div className="flex flex-wrap justify-center items-center gap-3 pt-2 text-sm text-white/60">
               <span>Try searching:</span>
-              {["Technology", "Health", "Finance", "Design", "Environment"].map((term) => (
+              {["Technology", "Music", "Sports", "Film", "Business", "Activism"].map((term) => (
                 <Link 
                   key={term}
                   to={`/search?q=${term}`}
@@ -155,7 +155,7 @@ export default function Index() {
             </Link>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {topInfluencers.map((influencer, index) => (
               <InfluencerCard 
                 key={influencer.id}
@@ -189,7 +189,7 @@ export default function Index() {
             </Link>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {trendingInfluencers.map((influencer, index) => (
               <InfluencerCard 
                 key={influencer.id}
