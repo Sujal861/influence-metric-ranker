@@ -1,3 +1,4 @@
+
 export interface InfluencerMetric {
   value: number;
   change: number;
@@ -35,7 +36,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "1",
     name: "Elon Musk",
-    imageUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg",
     title: "Tech Entrepreneur & Space Innovator",
     biography: "Elon Musk is the founder, CEO, and chief engineer of SpaceX; angel investor, CEO, and product architect of Tesla, Inc.; owner and CTO of Twitter; founder of The Boring Company; co-founder of Neuralink and OpenAI; and president of the philanthropic Musk Foundation.",
     metrics: {
@@ -60,7 +61,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "2",
     name: "Taylor Swift",
-    imageUrl: "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://media.vogue.co.uk/photos/649ec360f7a33b9a2e5fdb24/2:3/w_2560%2Cc_limit/GettyImages-1482795808.jpg",
     title: "Music Icon & Cultural Phenomenon",
     biography: "Taylor Swift is one of the most influential musicians of her generation, winning numerous awards including multiple Grammy Awards. Her evolution from country to pop has showcased her versatility and business acumen in the music industry.",
     metrics: {
@@ -85,7 +86,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "3",
     name: "LeBron James",
-    imageUrl: "https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png",
     title: "Basketball Legend & Social Activist",
     biography: "LeBron James is widely considered one of the greatest basketball players of all time. Beyond his athletic achievements, he has become a prominent voice on social issues and an entrepreneur with investments spanning media, sports, and education.",
     metrics: {
@@ -110,7 +111,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "4",
     name: "Oprah Winfrey",
-    imageUrl: "https://images.unsplash.com/photo-1550091354-d0bee8d8fc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://cdn.britannica.com/91/215191-050-E1EXCE0P/American-television-personality-entrepreneur-Oprah-Winfrey-2018.jpg",
     title: "Media Executive & Philanthropist",
     biography: "Oprah Winfrey is a talk show host, television producer, actress, author, and philanthropist. She is best known for her talk show, The Oprah Winfrey Show, which was the highest-rated television program of its kind and ran for 25 years.",
     metrics: {
@@ -135,7 +136,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "5",
     name: "Cristiano Ronaldo",
-    imageUrl: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://s.hs-data.com/bilder/spieler/gross/13029.jpg",
     title: "Football Superstar & Global Icon",
     biography: "Cristiano Ronaldo is one of the most famous athletes in the world. The Portuguese footballer has broken numerous records throughout his career with Manchester United, Real Madrid, Juventus, and the Portugal national team, becoming one of the most marketable athletes ever.",
     metrics: {
@@ -160,7 +161,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "6",
     name: "Malala Yousafzai",
-    imageUrl: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://malala.org/app/uploads/2021/09/F-About-Malala.jpg",
     title: "Education Activist & Nobel Laureate",
     biography: "Malala Yousafzai is a Pakistani activist for female education and the youngest Nobel Prize laureate. She is known for human rights advocacy, especially the education of women and children in her native region of northwest Pakistan.",
     metrics: {
