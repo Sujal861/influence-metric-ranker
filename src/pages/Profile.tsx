@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getInfluencerById } from '@/lib/mockData';
-import { ArrowLeft, ExternalLink, Star, Award, TrendingUp, BadgeCheck } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Star, Award, TrendingUp, BadgeCheck, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import ProfileMetrics from '@/components/ProfileMetrics';
 import { cn } from '@/lib/utils';
