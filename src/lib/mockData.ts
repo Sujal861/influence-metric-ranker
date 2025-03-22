@@ -1,4 +1,3 @@
-
 export interface InfluencerMetric {
   value: number;
   change: number;
@@ -35,152 +34,152 @@ export interface Influencer {
 export const mockInfluencers: Influencer[] = [
   {
     id: "1",
-    name: "Emma Thompson",
-    imageUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Tech Entrepreneur & Innovation Speaker",
-    biography: "Emma Thompson is a renowned tech entrepreneur and innovation speaker who has founded multiple successful startups. Her expertise in AI and machine learning has made her a sought-after consultant for Fortune 500 companies.",
+    name: "Elon Musk",
+    imageUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Tech Entrepreneur & Space Innovator",
+    biography: "Elon Musk is the founder, CEO, and chief engineer of SpaceX; angel investor, CEO, and product architect of Tesla, Inc.; owner and CTO of Twitter; founder of The Boring Company; co-founder of Neuralink and OpenAI; and president of the philanthropic Musk Foundation.",
     metrics: {
-      influence: { value: 92, change: 3, timeFrame: "month" },
-      credibility: { value: 89, change: 1, timeFrame: "month" },
-      relevance: { value: 94, change: 2, timeFrame: "month" },
-      consistency: { value: 91, change: 0, timeFrame: "month" },
-      engagement: { value: 87, change: 4, timeFrame: "month" }
+      influence: { value: 96, change: 5, timeFrame: "month" },
+      credibility: { value: 85, change: -2, timeFrame: "month" },
+      relevance: { value: 97, change: 3, timeFrame: "month" },
+      consistency: { value: 79, change: -3, timeFrame: "month" },
+      engagement: { value: 94, change: 6, timeFrame: "month" }
     },
-    categories: ["Technology", "Entrepreneurship", "Innovation"],
+    categories: ["Technology", "Entrepreneurship", "Space"],
     socialProfiles: [
-      { platform: "Twitter", handle: "@EmmaThompsonTech", followers: 2400000, url: "#" },
-      { platform: "LinkedIn", handle: "Emma Thompson", followers: 850000, url: "#" },
-      { platform: "Instagram", handle: "@emmatechtalks", followers: 1200000, url: "#" }
+      { platform: "Twitter", handle: "@elonmusk", followers: 128000000, url: "#" },
+      { platform: "LinkedIn", handle: "Elon Musk", followers: 4200000, url: "#" },
+      { platform: "Instagram", handle: "@elonmusk", followers: 5700000, url: "#" }
     ],
     achievements: [
-      { title: "Forbes 30 Under 30", date: "2021", description: "Recognized in the Technology category for innovative AI solutions" },
-      { title: "TED Talk: 'The Future of AI Ethics'", date: "2022", description: "Over 5 million views" },
-      { title: "Author: 'Beyond Algorithms'", date: "2023", description: "Bestselling book on ethical technology development" }
+      { title: "Time Person of the Year", date: "2021", description: "Recognized for his influence on life on Earth and beyond" },
+      { title: "Tesla reaches $1 trillion valuation", date: "2021", description: "Became the sixth company in U.S. history to reach this milestone" },
+      { title: "SpaceX's first crewed mission", date: "2020", description: "First private company to send humans to the International Space Station" }
     ]
   },
   {
     id: "2",
-    name: "Michael Chen",
-    imageUrl: "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Climate Scientist & Public Policy Advocate",
-    biography: "Dr. Michael Chen is a leading climate scientist whose research has significantly influenced environmental policy worldwide. His work bridges the gap between complex science and public understanding.",
+    name: "Taylor Swift",
+    imageUrl: "https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Music Icon & Cultural Phenomenon",
+    biography: "Taylor Swift is one of the most influential musicians of her generation, winning numerous awards including multiple Grammy Awards. Her evolution from country to pop has showcased her versatility and business acumen in the music industry.",
     metrics: {
-      influence: { value: 88, change: 5, timeFrame: "month" },
-      credibility: { value: 95, change: 0, timeFrame: "month" },
-      relevance: { value: 92, change: 3, timeFrame: "month" },
-      consistency: { value: 89, change: 1, timeFrame: "month" },
-      engagement: { value: 82, change: 7, timeFrame: "month" }
+      influence: { value: 98, change: 7, timeFrame: "month" },
+      credibility: { value: 92, change: 4, timeFrame: "month" },
+      relevance: { value: 95, change: 8, timeFrame: "month" },
+      consistency: { value: 93, change: 2, timeFrame: "month" },
+      engagement: { value: 97, change: 9, timeFrame: "month" }
     },
-    categories: ["Environment", "Science", "Policy"],
+    categories: ["Music", "Entertainment", "Business"],
     socialProfiles: [
-      { platform: "Twitter", handle: "@DrMichaelChen", followers: 1800000, url: "#" },
-      { platform: "LinkedIn", handle: "Dr. Michael Chen", followers: 670000, url: "#" },
-      { platform: "YouTube", handle: "ClimateWithMichael", followers: 3200000, url: "#" }
+      { platform: "Instagram", handle: "@taylorswift", followers: 272000000, url: "#" },
+      { platform: "Twitter", handle: "@taylorswift13", followers: 92000000, url: "#" },
+      { platform: "TikTok", handle: "@taylorswift", followers: 23000000, url: "#" }
     ],
     achievements: [
-      { title: "UN Environmental Prize", date: "2020", description: "For groundbreaking climate research" },
-      { title: "National Science Medal", date: "2022", description: "Awarded by the President for contributions to science" },
-      { title: "Documentary Series: 'Earth in Crisis'", date: "2023", description: "Emmy-nominated documentary on Netflix" }
+      { title: "Most Grammy Album of the Year Wins", date: "2023", description: "First artist to win the award four times" },
+      { title: "Billionaire Status", date: "2023", description: "Reached billionaire status through music catalog and performances" },
+      { title: "Eras Tour", date: "2023", description: "Highest-grossing concert tour of all time" }
     ]
   },
   {
     id: "3",
-    name: "Sophia Rodriguez",
-    imageUrl: "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Financial Educator & Inclusion Advocate",
-    biography: "Sophia Rodriguez has transformed financial education through her accessible approach to complex economic concepts. Her work focuses on financial inclusion for underrepresented communities.",
+    name: "LeBron James",
+    imageUrl: "https://images.unsplash.com/photo-1590086782957-93c06ef21604?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Basketball Legend & Social Activist",
+    biography: "LeBron James is widely considered one of the greatest basketball players of all time. Beyond his athletic achievements, he has become a prominent voice on social issues and an entrepreneur with investments spanning media, sports, and education.",
     metrics: {
-      influence: { value: 85, change: 8, timeFrame: "month" },
-      credibility: { value: 88, change: 2, timeFrame: "month" },
-      relevance: { value: 90, change: 5, timeFrame: "month" },
-      consistency: { value: 93, change: 1, timeFrame: "month" },
-      engagement: { value: 91, change: 6, timeFrame: "month" }
+      influence: { value: 93, change: 3, timeFrame: "month" },
+      credibility: { value: 91, change: 1, timeFrame: "month" },
+      relevance: { value: 89, change: 2, timeFrame: "month" },
+      consistency: { value: 95, change: 0, timeFrame: "month" },
+      engagement: { value: 88, change: 4, timeFrame: "month" }
     },
-    categories: ["Finance", "Education", "Social Impact"],
+    categories: ["Sports", "Social Impact", "Business"],
     socialProfiles: [
-      { platform: "Instagram", handle: "@SophiaFinance", followers: 3500000, url: "#" },
-      { platform: "TikTok", handle: "@money_with_sophia", followers: 5200000, url: "#" },
-      { platform: "Podcast", handle: "The Money Mindset", followers: 1800000, url: "#" }
+      { platform: "Instagram", handle: "@kingjames", followers: 158000000, url: "#" },
+      { platform: "Twitter", handle: "@KingJames", followers: 52000000, url: "#" },
+      { platform: "YouTube", handle: "UNINTERRUPTED", followers: 2200000, url: "#" }
     ],
     achievements: [
-      { title: "Financial Educator of the Year", date: "2021", description: "American Finance Association" },
-      { title: "#1 Finance Podcast", date: "2022", description: "Top-ranked financial podcast on Spotify for 48 weeks" },
-      { title: "Goldman Sachs Innovation Grant", date: "2023", description: "For developing financial literacy app for underserved communities" }
+      { title: "4× NBA Champion", date: "2020", description: "Led the Lakers to their 17th championship" },
+      { title: "I Promise School", date: "2018", description: "Founded a public school for at-risk children in Akron" },
+      { title: "Becoming Part-Owner of the Boston Red Sox", date: "2021", description: "Expanded his sports ownership portfolio" }
     ]
   },
   {
     id: "4",
-    name: "James Wilson",
-    imageUrl: "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Health & Wellness Expert",
-    biography: "Dr. James Wilson combines traditional medical expertise with holistic approaches to health and wellness. His evidence-based methodology has challenged industry norms and created a new paradigm in preventative healthcare.",
+    name: "Oprah Winfrey",
+    imageUrl: "https://images.unsplash.com/photo-1550091354-d0bee8d8fc1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Media Executive & Philanthropist",
+    biography: "Oprah Winfrey is a talk show host, television producer, actress, author, and philanthropist. She is best known for her talk show, The Oprah Winfrey Show, which was the highest-rated television program of its kind and ran for 25 years.",
     metrics: {
-      influence: { value: 87, change: 2, timeFrame: "month" },
-      credibility: { value: 91, change: 0, timeFrame: "month" },
-      relevance: { value: 88, change: 3, timeFrame: "month" },
-      consistency: { value: 94, change: 1, timeFrame: "month" },
-      engagement: { value: 89, change: 4, timeFrame: "month" }
+      influence: { value: 92, change: 1, timeFrame: "month" },
+      credibility: { value: 94, change: 2, timeFrame: "month" },
+      relevance: { value: 87, change: -1, timeFrame: "month" },
+      consistency: { value: 96, change: 0, timeFrame: "month" },
+      engagement: { value: 85, change: 2, timeFrame: "month" }
     },
-    categories: ["Health", "Wellness", "Medicine"],
+    categories: ["Media", "Philanthropy", "Business"],
     socialProfiles: [
-      { platform: "Instagram", handle: "@DrJamesWellness", followers: 2800000, url: "#" },
-      { platform: "YouTube", handle: "The Wellness Method", followers: 4100000, url: "#" },
-      { platform: "Twitter", handle: "@Dr_JWilson", followers: 1600000, url: "#" }
+      { platform: "Instagram", handle: "@oprah", followers: 22000000, url: "#" },
+      { platform: "Twitter", handle: "@Oprah", followers: 42000000, url: "#" },
+      { platform: "Facebook", handle: "oprahwinfrey", followers: 11700000, url: "#" }
     ],
     achievements: [
-      { title: "Medical Innovation Award", date: "2020", description: "For pioneering integrative medicine approaches" },
-      { title: "Bestselling Author: 'The Balance Within'", date: "2021", description: "Translated into 28 languages" },
-      { title: "Wellness App of the Year", date: "2023", description: "For his holistic health application with over 10 million users" }
+      { title: "Presidential Medal of Freedom", date: "2013", description: "Awarded by President Barack Obama" },
+      { title: "Oprah Winfrey Leadership Academy for Girls", date: "2007", description: "Founded a school for girls in South Africa" },
+      { title: "First Black Female Billionaire", date: "2003", description: "Made history as a self-made billionaire" }
     ]
   },
   {
     id: "5",
-    name: "Aisha Johnson",
-    imageUrl: "https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Creative Director & Design Thought Leader",
-    biography: "Aisha Johnson is redefining modern design principles through her work with global brands. Her inclusive design philosophy emphasizes accessibility and cultural sensitivity, setting new standards in the industry.",
+    name: "Cristiano Ronaldo",
+    imageUrl: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Football Superstar & Global Icon",
+    biography: "Cristiano Ronaldo is one of the most famous athletes in the world. The Portuguese footballer has broken numerous records throughout his career with Manchester United, Real Madrid, Juventus, and the Portugal national team, becoming one of the most marketable athletes ever.",
     metrics: {
-      influence: { value: 93, change: 4, timeFrame: "month" },
-      credibility: { value: 90, change: 2, timeFrame: "month" },
-      relevance: { value: 95, change: 5, timeFrame: "month" },
-      consistency: { value: 87, change: 1, timeFrame: "month" },
-      engagement: { value: 92, change: 3, timeFrame: "month" }
+      influence: { value: 95, change: 3, timeFrame: "month" },
+      credibility: { value: 88, change: 1, timeFrame: "month" },
+      relevance: { value: 91, change: 2, timeFrame: "month" },
+      consistency: { value: 93, change: -1, timeFrame: "month" },
+      engagement: { value: 97, change: 5, timeFrame: "month" }
     },
-    categories: ["Design", "Arts", "Innovation"],
+    categories: ["Sports", "Business", "Entertainment"],
     socialProfiles: [
-      { platform: "Instagram", handle: "@AishaDesigns", followers: 3900000, url: "#" },
-      { platform: "Pinterest", handle: "Aisha Johnson Design", followers: 8200000, url: "#" },
-      { platform: "Behance", handle: "Aisha Johnson Studio", followers: 1500000, url: "#" }
+      { platform: "Instagram", handle: "@cristiano", followers: 597000000, url: "#" },
+      { platform: "Twitter", handle: "@Cristiano", followers: 108000000, url: "#" },
+      { platform: "Facebook", handle: "Cristiano", followers: 160000000, url: "#" }
     ],
     achievements: [
-      { title: "Cannes Lions Grand Prix", date: "2021", description: "For breakthrough inclusive advertising campaign" },
-      { title: "Design Museum Exhibition", date: "2022", description: "Solo exhibition 'Designing for Everyone'" },
-      { title: "AIGA Medal", date: "2023", description: "Lifetime achievement in design" }
+      { title: "5× UEFA Champions League titles", date: "2018", description: "Has the most Champions League titles in the modern era" },
+      { title: "5× Ballon d'Or", date: "2017", description: "One of the most prestigious individual awards in football" },
+      { title: "First person to reach 500 million followers", date: "2023", description: "Most followed person on Instagram in the world" }
     ]
   },
   {
     id: "6",
-    name: "David Park",
-    imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    title: "Human Rights Lawyer & Social Justice Advocate",
-    biography: "David Park has dedicated his career to human rights law, working on landmark cases that have changed legal precedents globally. His advocacy extends beyond the courtroom to grassroots community empowerment.",
+    name: "Malala Yousafzai",
+    imageUrl: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    title: "Education Activist & Nobel Laureate",
+    biography: "Malala Yousafzai is a Pakistani activist for female education and the youngest Nobel Prize laureate. She is known for human rights advocacy, especially the education of women and children in her native region of northwest Pakistan.",
     metrics: {
-      influence: { value: 91, change: 6, timeFrame: "month" },
-      credibility: { value: 96, change: 1, timeFrame: "month" },
-      relevance: { value: 93, change: 4, timeFrame: "month" },
-      consistency: { value: 97, change: 2, timeFrame: "month" },
-      engagement: { value: 86, change: 5, timeFrame: "month" }
+      influence: { value: 89, change: 4, timeFrame: "month" },
+      credibility: { value: 97, change: 2, timeFrame: "month" },
+      relevance: { value: 92, change: 3, timeFrame: "month" },
+      consistency: { value: 96, change: 1, timeFrame: "month" },
+      engagement: { value: 84, change: 3, timeFrame: "month" }
     },
-    categories: ["Law", "Human Rights", "Social Justice"],
+    categories: ["Education", "Human Rights", "Social Justice"],
     socialProfiles: [
-      { platform: "Twitter", handle: "@DavidParkJustice", followers: 2100000, url: "#" },
-      { platform: "LinkedIn", handle: "David Park", followers: 780000, url: "#" },
-      { platform: "Substack", handle: "Justice Matters", followers: 950000, url: "#" }
+      { platform: "Twitter", handle: "@Malala", followers: 2900000, url: "#" },
+      { platform: "Instagram", handle: "@malala", followers: 2300000, url: "#" },
+      { platform: "Facebook", handle: "MalalaFund", followers: 1500000, url: "#" }
     ],
     achievements: [
-      { title: "Nobel Peace Prize Nominee", date: "2020", description: "For work on international refugee rights" },
-      { title: "UN Human Rights Award", date: "2021", description: "For advocacy for indigenous land rights" },
-      { title: "Author: 'Justice Beyond Borders'", date: "2023", description: "Critically acclaimed book on international human rights law" }
+      { title: "Nobel Peace Prize", date: "2014", description: "Youngest-ever Nobel Prize laureate" },
+      { title: "UN Messenger of Peace", date: "2017", description: "Designated with a special focus on girls' education" },
+      { title: "Oxford University Graduate", date: "2020", description: "Earned a degree in Philosophy, Politics and Economics" }
     ]
   }
 ];
