@@ -66,6 +66,12 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Active card state */
+.card-3d:active {
+  transform: translateY(0) rotateX(0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Perspective container for 3D effect */
 .perspective {
   perspective: 1000px;
@@ -82,6 +88,19 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Alternative text colors */
+.text-alt-purple {
+  color: #9b87f5;
+}
+
+.text-alt-blue {
+  color: #5ac8fa;
+}
+
+.text-alt-pink {
+  color: #ff2d55;
 }
 
 /* Fade-in animation */

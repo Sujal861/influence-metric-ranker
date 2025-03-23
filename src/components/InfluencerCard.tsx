@@ -18,6 +18,7 @@ export default function InfluencerCard({
   isFeatured = false
 }: InfluencerCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   
   const hasPositiveChange = influencer.metrics.influence.change > 0;
   
@@ -39,6 +40,9 @@ export default function InfluencerCard({
         )}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onMouseDown={() => setIsClicked(true)}
+        onMouseUp={() => setIsClicked(false)}
+        onBlur={() => setIsClicked(false)}
       >
         <div className="relative aspect-[3/2] overflow-hidden">
           <div 
@@ -80,7 +84,10 @@ export default function InfluencerCard({
           </div>
         </div>
         
-        <div className="p-4 relative">
+        <div className={cn(
+          "p-4 relative",
+          isClicked ? "bg-gray-900" : ""
+        )}>
           <div className="absolute right-4 top-4">
             <div className="flex items-center gap-1 text-influence-accent glow">
               <Star size={16} className="fill-current" />
@@ -88,22 +95,34 @@ export default function InfluencerCard({
             </div>
           </div>
           
-          <h3 className="font-semibold text-lg mb-1 pr-16">{influencer.name}</h3>
-          <p className="text-muted-foreground text-sm mb-4 line-clamp-1">{influencer.title}</p>
+          <h3 className={cn(
+            "font-semibold text-lg mb-1 pr-16",
+            isClicked ? "text-influence-secondaryAccent" : ""
+          )}>{influencer.name}</h3>
+          <p className={cn(
+            "text-sm mb-4 line-clamp-1",
+            isClicked ? "text-purple-300" : "text-muted-foreground"
+          )}>{influencer.title}</p>
           
           <div className="space-y-2">
             <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Credibility</span>
+              <span className={cn(
+                isClicked ? "text-blue-300" : "text-muted-foreground"
+              )}>Credibility</span>
               <RatingVisual value={influencer.metrics.credibility.value} max={100} size="sm" />
             </div>
             
             <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Relevance</span>
+              <span className={cn(
+                isClicked ? "text-blue-300" : "text-muted-foreground"
+              )}>Relevance</span>
               <RatingVisual value={influencer.metrics.relevance.value} max={100} size="sm" />
             </div>
             
             <div className="flex items-center justify-between text-xs">
-              <span className="text-muted-foreground">Consistency</span>
+              <span className={cn(
+                isClicked ? "text-blue-300" : "text-muted-foreground"
+              )}>Consistency</span>
               <RatingVisual value={influencer.metrics.consistency.value} max={100} size="sm" />
             </div>
           </div>
