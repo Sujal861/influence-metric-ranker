@@ -37,43 +37,43 @@
 
   :root {
     --background: 0 0% 0%; /* Black background */
-    --foreground: 60 100% 50%; /* Yellow text */
+    --foreground: 210 100% 56%; /* Blue text (Dodger Blue) */
 
     --card: 0 0% 5%; /* Very dark gray card bg */
-    --card-foreground: 60 100% 50%; /* Yellow card text */
+    --card-foreground: 210 100% 56%; /* Blue card text */
 
     --popover: 0 0% 0%; /* Black popover */
-    --popover-foreground: 60 100% 50%; /* Yellow popover text */
+    --popover-foreground: 210 100% 56%; /* Blue popover text */
 
-    --primary: 60 100% 50%;  /* Yellow accent */
+    --primary: 210 100% 56%;  /* Blue accent */
     --primary-foreground: 0 0% 0%; /* Black text on primary */
 
     --secondary: 0 0% 10%; /* Very dark gray */
-    --secondary-foreground: 60 100% 50%; /* Yellow text on secondary */
+    --secondary-foreground: 210 100% 56%; /* Blue text on secondary */
 
     --muted: 0 0% 15%; /* Dark gray muted */
-    --muted-foreground: 60 100% 80%; /* Light yellow muted text */
+    --muted-foreground: 210 100% 80%; /* Light blue muted text */
 
-    --accent: 60 100% 50%; /* Yellow accent */
+    --accent: 210 100% 56%; /* Blue accent */
     --accent-foreground: 0 0% 0%; /* Black text on accent */
 
     --destructive: 0 62.8% 30.6%; /* Dark red */
     --destructive-foreground: 0 0% 0%; /* Black text on destructive */
 
-    --border: 60 100% 50%; /* Yellow border */
-    --input: 60 100% 50%; /* Yellow input */
-    --ring: 60 100% 50%; /* Yellow ring */
+    --border: 210 100% 56%; /* Blue border */
+    --input: 210 100% 56%; /* Blue input */
+    --ring: 210 100% 56%; /* Blue ring */
 
     --radius: 0.5rem; /* Reduced border radius for simplicity */
 
     --sidebar-background: 0 0% 5%; /* Dark sidebar */
-    --sidebar-foreground: 60 100% 50%; /* Yellow sidebar text */
-    --sidebar-primary: 60 100% 50%; /* Yellow sidebar accent */
+    --sidebar-foreground: 210 100% 56%; /* Blue sidebar text */
+    --sidebar-primary: 210 100% 56%; /* Blue sidebar accent */
     --sidebar-primary-foreground: 0 0% 0%; /* Black sidebar accent text */
     --sidebar-accent: 0 0% 10%; /* Darker sidebar accent */
-    --sidebar-accent-foreground: 60 100% 50%; /* Yellow sidebar accent text */
-    --sidebar-border: 60 100% 50%; /* Yellow sidebar border */
-    --sidebar-ring: 60 100% 50%; /* Yellow sidebar ring */
+    --sidebar-accent-foreground: 210 100% 56%; /* Blue sidebar accent text */
+    --sidebar-border: 210 100% 56%; /* Blue sidebar border */
+    --sidebar-ring: 210 100% 56%; /* Blue sidebar ring */
   }
 }
 
