@@ -1,4 +1,3 @@
-
 export interface InfluencerMetric {
   value: number;
   change: number;
@@ -36,7 +35,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "1",
     name: "Elon Musk",
-    imageUrl: "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1215690299.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1670348277276-8e9a75d3bd20?q=80&w=2187&auto=format&fit=crop",
     title: "Tech Entrepreneur & Space Innovator",
     biography: "Elon Musk is the founder, CEO, and chief engineer of SpaceX; angel investor, CEO, and product architect of Tesla, Inc.; owner and CTO of Twitter; founder of The Boring Company; co-founder of Neuralink and OpenAI; and president of the philanthropic Musk Foundation.",
     metrics: {
@@ -61,7 +60,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "2",
     name: "Taylor Swift",
-    imageUrl: "https://media.architecturaldigest.com/photos/65081c26d91ff23e6cc3fb86/16:9/w_2560%2Cc_limit/GettyImages-1704364140.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1682687982093-4dbdfb96dbf4?q=80&w=1974&auto=format&fit=crop",
     title: "Music Icon & Cultural Phenomenon",
     biography: "Taylor Swift is one of the most influential musicians of her generation, winning numerous awards including multiple Grammy Awards. Her evolution from country to pop has showcased her versatility and business acumen in the music industry.",
     metrics: {
@@ -86,7 +85,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "3",
     name: "LeBron James",
-    imageUrl: "https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-08/LeBron-James-100622-GETTY-FTR.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1649524834212-e2c76ad6a1e3?q=80&w=1974&auto=format&fit=crop",
     title: "Basketball Legend & Social Activist",
     biography: "LeBron James is widely considered one of the greatest basketball players of all time. Beyond his athletic achievements, he has become a prominent voice on social issues and an entrepreneur with investments spanning media, sports, and education.",
     metrics: {
@@ -111,7 +110,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "4",
     name: "Oprah Winfrey",
-    imageUrl: "https://pyxis.nymag.com/v1/imgs/809/f97/e25ae3d994e13b3c8bdf15931728a2bd9e-oprah-winfrey.2x.rsquare.w536.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1546084866-5f69ae8e5a8c?q=80&w=1974&auto=format&fit=crop",
     title: "Media Executive & Philanthropist",
     biography: "Oprah Winfrey is a talk show host, television producer, actress, author, and philanthropist. She is best known for her talk show, The Oprah Winfrey Show, which was the highest-rated television program of its kind and ran for 25 years.",
     metrics: {
@@ -136,7 +135,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "5",
     name: "Cristiano Ronaldo",
-    imageUrl: "https://i.guim.co.uk/img/media/49fe41f27e21f8493e8b5400f1b3c67de64f5c85/0_94_4278_2566/master/4278.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=3f67c5d08d8aeff66f5c829f2f24b5cd",
+    imageUrl: "https://images.unsplash.com/photo-1649261191626-1756a803ac1d?q=80&w=1964&auto=format&fit=crop",
     title: "Football Superstar & Global Icon",
     biography: "Cristiano Ronaldo is one of the most famous athletes in the world. The Portuguese footballer has broken numerous records throughout his career with Manchester United, Real Madrid, Juventus, and the Portugal national team, becoming one of the most marketable athletes ever.",
     metrics: {
@@ -161,7 +160,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "6",
     name: "Malala Yousafzai",
-    imageUrl: "https://people.com/thmb/5OT5-F83U9vgbjrKhBfW2bTgCb0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(674x51:676x53)/malala-yousafzai-2000-2a87eb21b1c142d39c9c74ed2882bc19.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1588599336853-a4779144fe8f?q=80&w=1974&auto=format&fit=crop",
     title: "Education Activist & Nobel Laureate",
     biography: "Malala Yousafzai is a Pakistani activist for female education and the youngest Nobel Prize laureate. She is known for human rights advocacy, especially the education of women and children in her native region of northwest Pakistan.",
     metrics: {
@@ -186,7 +185,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "7",
     name: "Beyoncé Knowles-Carter",
-    imageUrl: "https://media.vogue.fr/photos/5c360551d019fb5183799f3f/2:3/w_2560%2Cc_limit/beyonce_1.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1661630803143-e28270b7bf64?q=80&w=1974&auto=format&fit=crop",
     title: "Global Music Superstar & Entrepreneur",
     biography: "Beyoncé is one of the world's best-selling recording artists, known for her powerful vocals, groundbreaking visual albums, and cultural impact. Beyond music, she's built a business empire spanning fashion, film, and more.",
     metrics: {
@@ -211,7 +210,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "8",
     name: "Shah Rukh Khan",
-    imageUrl: "https://assets.gqindia.com/photos/645f2bc394d5e661361ec148/master/pass/Shah-Rukh-Khan-is-a-humble-king.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1669275146956-0b06ad2c7790?q=80&w=1974&auto=format&fit=crop",
     title: "Bollywood Icon & Global Film Star",
     biography: "Known as the 'King of Bollywood', Shah Rukh Khan is one of the most successful film stars in the world with a career spanning over three decades. His influence extends beyond film to business, philanthropy, and global cultural diplomacy.",
     metrics: {
@@ -236,7 +235,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "9",
     name: "Dwayne 'The Rock' Johnson",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Dwayne_Johnson_2%2C_2013.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1633886038251-66912d7d5f70?q=80&w=1632&auto=format&fit=crop",
     title: "Actor, Producer & Former Wrestler",
     biography: "Dwayne Johnson transitioned from a successful wrestling career as 'The Rock' to become one of Hollywood's highest-grossing and most influential actors. His business ventures span entertainment, fitness, and consumer goods.",
     metrics: {
@@ -261,7 +260,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "10",
     name: "Rihanna",
-    imageUrl: "https://media.architecturaldigest.com/photos/62dab1c39dc0f896794b27eb/16:9/w_2560%2Cc_limit/GettyImages-1404290555.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1679686255657-fd5a2c734ff8?q=80&w=1974&auto=format&fit=crop",
     title: "Music Artist, Beauty Mogul & Entrepreneur",
     biography: "Beyond her successful music career, Rihanna has revolutionized the beauty and fashion industries with Fenty Beauty and Savage X Fenty, creating inclusive products that cater to diverse markets often overlooked by traditional brands.",
     metrics: {
@@ -286,7 +285,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "11",
     name: "BTS",
-    imageUrl: "https://pyxis.nymag.com/v1/imgs/c10/524/1853b57c713c3e34910026c7e8a7ce4961-BTS-2.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1682962134382-34f4e2de5244?q=80&w=1974&auto=format&fit=crop",
     title: "Global K-pop Phenomenon",
     biography: "BTS has transcended cultural and language barriers to become one of the world's most influential music acts. Their impact extends beyond music to philanthropy, mental health advocacy, and cultural diplomacy.",
     metrics: {
@@ -311,7 +310,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "12",
     name: "Serena Williams",
-    imageUrl: "https://ca-times.brightspotcdn.com/dims4/default/83de13e/2147483647/strip/true/crop/2618x3927+0+0/resize/1200x1800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F12%2Fa5%2F79e097ad4c28865903ea506c2fda%2Fserena-williams-90015678.JPG",
+    imageUrl: "https://images.unsplash.com/photo-1661268129385-1440ea821c51?q=80&w=1974&auto=format&fit=crop",
     title: "Tennis Legend & Business Pioneer",
     biography: "Serena Williams has dominated women's tennis with 23 Grand Slam singles titles. Beyond sports, she's a venture capitalist, fashion designer, and advocate for women's rights and equality.",
     metrics: {
@@ -336,7 +335,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "13",
     name: "Mark Zuckerberg",
-    imageUrl: "https://image.cnbcfm.com/api/v1/image/107326056-1698758530533-gettyimages-1765113277-MARK_ZUCKERBERG.jpeg",
+    imageUrl: "https://images.unsplash.com/photo-1614308456595-a51c200c6ee5?q=80&w=1974&auto=format&fit=crop",
     title: "Tech CEO & Meta Founder",
     biography: "Mark Zuckerberg co-founded Facebook in 2004, which evolved into Meta Platforms, Inc. His vision has shaped social media, digital communication, and more recently, efforts to build the metaverse.",
     metrics: {
@@ -361,7 +360,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "14",
     name: "Lionel Messi",
-    imageUrl: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2023%2F10%2Flionel-messi-ballon-dor-2023-win-eighth-award-info-1.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?q=80&w=1974&auto=format&fit=crop",
     title: "Football Icon & Global Sports Legend",
     biography: "Widely regarded as one of the greatest footballers of all time, Lionel Messi has set numerous records throughout his career with Barcelona, Paris Saint-Germain, Inter Miami, and the Argentina national team.",
     metrics: {
@@ -386,7 +385,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "15",
     name: "Michelle Obama",
-    imageUrl: "https://hips.hearstapps.com/hmg-prod/images/michelle-obama-accepts-the-presidents-award-at-the-54th-news-photo-1676776216.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1655679152783-f4d22a0a7298?q=80&w=1964&auto=format&fit=crop",
     title: "Former First Lady & Global Advocate",
     biography: "Michelle Obama served as First Lady of the United States from 2009 to 2017. Since then, she has continued her advocacy work in education, health, and empowerment through books, speaking engagements, and the Obama Foundation.",
     metrics: {
@@ -411,7 +410,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "16",
     name: "Lady Gaga",
-    imageUrl: "https://media.glamour.com/photos/65c535aff217d0648abc1b4f/master/w_2560%2Cc_limit/1745016814",
+    imageUrl: "https://images.unsplash.com/photo-1626199861599-406cb7da4ed5?q=80&w=1974&auto=format&fit=crop",
     title: "Music Innovator & Social Activist",
     biography: "Lady Gaga has transformed pop music with her innovative artistic vision. Beyond music, she's an acclaimed actress, beauty entrepreneur, and dedicated advocate for mental health awareness and LGBTQ+ rights.",
     metrics: {
@@ -436,7 +435,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "17",
     name: "Priyanka Chopra Jonas",
-    imageUrl: "https://assets.vogue.in/photos/6440ad0ac01410bc33f4e70e/2:3/w_2560%2Cc_limit/335695074_1378021979679694_9047390220400082954_n.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1626804475297-41608ea09bca?q=80&w=1970&auto=format&fit=crop",
     title: "Actress, Producer & Entrepreneur",
     biography: "Priyanka Chopra Jonas began her career as a Miss World winner before becoming one of India's highest-paid actresses. She successfully transitioned to Hollywood, while building businesses and engaging in humanitarian work.",
     metrics: {
@@ -461,7 +460,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "18",
     name: "Billie Eilish",
-    imageUrl: "https://ca-times.brightspotcdn.com/dims4/default/f3fd829/2147483647/strip/true/crop/2000x3000+0+0/resize/1200x1800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fff%2F2c%2Fd0caa8d5440ea02d841047ea4c48%2Fla-et-grammys-portraits-2022-eilish-00218-copy.JPG",
+    imageUrl: "https://images.unsplash.com/photo-1621784166258-c6fdfff29148?q=80&w=1974&auto=format&fit=crop",
     title: "Groundbreaking Musician & Gen Z Voice",
     biography: "Billie Eilish rose to fame at a young age with her distinctive musical style and aesthetic. She has broken numerous records while using her platform to advocate for environmental causes, body positivity, and mental health awareness.",
     metrics: {
@@ -486,7 +485,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "19",
     name: "Jack Ma",
-    imageUrl: "https://static01.nyt.com/images/2023/01/07/multimedia/07china-ma-01-zvht/07china-ma-01-zvht-superJumbo.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1536749305881-4e5149c28eac?q=80&w=1974&auto=format&fit=crop",
     title: "E-commerce Pioneer & Philanthropist",
     biography: "Jack Ma co-founded Alibaba Group, revolutionizing e-commerce in China and globally. Despite stepping back from business leadership, his influence continues through philanthropy and educational initiatives.",
     metrics: {
@@ -511,7 +510,7 @@ export const mockInfluencers: Influencer[] = [
   {
     id: "20",
     name: "Angelina Jolie",
-    imageUrl: "https://media.vanityfair.com/photos/64facdb03998c5ec40917f63/master/w_2560%2Cc_limit/vf-AngelinaJolie.jpg",
+    imageUrl: "https://images.unsplash.com/photo-1593878596127-8f4ff3ab6f1a?q=80&w=1974&auto=format&fit=crop",
     title: "Actress, Filmmaker & Humanitarian",
     biography: "Angelina Jolie has balanced an award-winning acting career with humanitarian work and advocacy. As a UNHCR Special Envoy and through various initiatives, she has brought attention to refugee issues, education, and women's rights globally.",
     metrics: {
