@@ -5,7 +5,7 @@
   padding: 2rem;
   text-align: center;
   background-color: #000;
-  color: #fff;
+  color: #FFD700; /* Yellow text */
 }
 
 .logo {
@@ -16,11 +16,11 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(93, 194, 255, 0.7));
+  filter: drop-shadow(0 0 2em rgba(255, 215, 0, 0.7)); /* Yellow glow */
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.7));
+  filter: drop-shadow(0 0 2em rgba(255, 215, 0, 0.7)); /* Yellow glow */
 }
 
 @keyframes logo-spin {
@@ -41,18 +41,18 @@
 .card {
   padding: 2em;
   background-color: #121212;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 215, 0, 0.3); /* Subtle yellow border */
+  border-radius: 0.5rem;
 }
 
 .read-the-docs {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 215, 0, 0.5); /* Muted yellow */
 }
 
 /* Global styles */
 body {
   background-color: #000;
-  color: #fff;
+  color: #FFD700; /* Yellow text */
 }
 
 /* Animation for card 3D effect */
@@ -64,6 +64,7 @@ body {
 .card-3d:hover {
   transform: translateY(-5px) rotateX(5deg);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: #FFD700; /* Full yellow border on hover */
 }
 
 /* Active card state */
@@ -79,12 +80,12 @@ body {
 
 /* Glowing text effect */
 .glow {
-  text-shadow: 0 0 15px rgba(93, 194, 255, 0.7);
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Yellow glow */
 }
 
 /* Gradient text effect */
 .text-gradient {
-  background: linear-gradient(to right, #fff, #5dc2ff);
+  background: linear-gradient(to right, #FFD700, #FFC107); /* Yellow gradient */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -92,15 +93,15 @@ body {
 
 /* Alternative text colors */
 .text-alt-purple {
-  color: #9b87f5;
+  color: #FFD700; /* Changed to yellow */
 }
 
 .text-alt-blue {
-  color: #5ac8fa;
+  color: #FFC107; /* Changed to amber yellow */
 }
 
 .text-alt-pink {
-  color: #ff2d55;
+  color: #FFEB3B; /* Changed to light yellow */
 }
 
 /* Fade-in animation */
@@ -158,4 +159,40 @@ body {
 }
 .animation-delay-500 {
   animation-delay: 500ms;
+}
+
+/* High contrast text for better readability */
+.high-contrast-text {
+  color: #FFD700; /* Bright yellow */
+  text-shadow: 0 0 2px #000; /* Black outline */
+}
+
+/* Simple card styles */
+.simple-card {
+  background-color: #121212;
+  border: 1px solid #FFD700;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+}
+
+.simple-card:hover {
+  background-color: #1a1a1a;
+  border-color: #FFC107;
+}
+
+/* High visibility button */
+.high-vis-button {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.high-vis-button:hover {
+  background-color: #FFC107;
+  transform: translateY(-2px);
 }

@@ -20,12 +20,12 @@ export default function RatingVisual({
 }: RatingVisualProps) {
   const percentage = (value / max) * 100;
   
-  // Color based on value
+  // Color based on value - updated to yellow scheme
   const getColorClass = () => {
-    if (percentage >= 90) return 'bg-influence-success';
-    if (percentage >= 70) return 'bg-influence-accent';
-    if (percentage >= 50) return 'bg-influence-warning';
-    return 'bg-influence-error';
+    if (percentage >= 90) return 'bg-[#FFD700]'; // Gold
+    if (percentage >= 70) return 'bg-[#FFC107]'; // Amber
+    if (percentage >= 50) return 'bg-[#FFEB3B]'; // Yellow
+    return 'bg-[#FFF59D]'; // Light yellow
   };
   
   // Size based on the prop
@@ -42,7 +42,7 @@ export default function RatingVisual({
       <div className={cn(
         'relative rounded-full overflow-hidden',
         getSizeClasses(),
-        showBackground ? 'bg-gray-200 dark:bg-gray-700' : ''
+        showBackground ? 'bg-gray-800' : '' // Darker background for contrast
       )}>
         <div
           className={cn(
@@ -58,7 +58,7 @@ export default function RatingVisual({
       </div>
       
       {showText && (
-        <span className="ml-2 text-sm font-medium tabular-nums">
+        <span className="ml-2 text-sm font-medium tabular-nums text-[#FFD700]">
           {value}
         </span>
       )}

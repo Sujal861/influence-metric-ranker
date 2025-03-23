@@ -66,10 +66,10 @@ export default {
 				influence: {
 					light: '#f8f9fa',
 					dark: '#212529',
-					accent: '#0071e3',
-					secondaryAccent: '#5ac8fa',
+					accent: '#FFD700', // Changed to gold/yellow
+					secondaryAccent: '#FFC107', // Changed to amber yellow
 					neutral: '#8e8e93',
-					success: '#34c759',
+					success: '#FFD700', // Changed to gold
 					warning: '#ff9500',
 					error: '#ff3b30',
 				}
