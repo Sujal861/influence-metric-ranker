@@ -20,12 +20,12 @@ export default function RatingVisual({
 }: RatingVisualProps) {
   const percentage = (value / max) * 100;
   
-  // Color based on value - updated to yellow scheme
+  // Color based on value - updated to blue scheme
   const getColorClass = () => {
-    if (percentage >= 90) return 'bg-[#FFD700]'; // Gold
-    if (percentage >= 70) return 'bg-[#FFC107]'; // Amber
-    if (percentage >= 50) return 'bg-[#FFEB3B]'; // Yellow
-    return 'bg-[#FFF59D]'; // Light yellow
+    if (percentage >= 90) return 'bg-[#1E90FF]'; // Dodger Blue
+    if (percentage >= 70) return 'bg-[#4169E1]'; // Royal Blue
+    if (percentage >= 50) return 'bg-[#6495ED]'; // Cornflower Blue
+    return 'bg-[#87CEFA]'; // Light Sky Blue
   };
   
   // Size based on the prop
@@ -58,7 +58,7 @@ export default function RatingVisual({
       </div>
       
       {showText && (
-        <span className="ml-2 text-sm font-medium tabular-nums text-[#FFD700]">
+        <span className="ml-2 text-sm font-medium tabular-nums text-[#1E90FF]">
           {value}
         </span>
       )}

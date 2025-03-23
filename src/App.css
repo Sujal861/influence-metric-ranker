@@ -5,7 +5,7 @@
   padding: 2rem;
   text-align: center;
   background-color: #000;
-  color: #FFD700; /* Yellow text */
+  color: #1E90FF; /* Blue text instead of yellow */
 }
 
 .logo {
@@ -16,11 +16,11 @@
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(255, 215, 0, 0.7)); /* Yellow glow */
+  filter: drop-shadow(0 0 2em rgba(30, 144, 255, 0.7)); /* Blue glow instead of yellow */
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em rgba(255, 215, 0, 0.7)); /* Yellow glow */
+  filter: drop-shadow(0 0 2em rgba(30, 144, 255, 0.7)); /* Blue glow instead of yellow */
 }
 
 @keyframes logo-spin {
@@ -41,18 +41,18 @@
 .card {
   padding: 2em;
   background-color: #121212;
-  border: 1px solid rgba(255, 215, 0, 0.3); /* Subtle yellow border */
+  border: 1px solid rgba(30, 144, 255, 0.3); /* Blue border instead of yellow */
   border-radius: 0.5rem;
 }
 
 .read-the-docs {
-  color: rgba(255, 215, 0, 0.5); /* Muted yellow */
+  color: rgba(30, 144, 255, 0.5); /* Muted blue instead of yellow */
 }
 
 /* Global styles */
 body {
   background-color: #000;
-  color: #FFD700; /* Yellow text */
+  color: #1E90FF; /* Blue text instead of yellow */
 }
 
 /* Animation for card 3D effect */
@@ -64,7 +64,7 @@ body {
 .card-3d:hover {
   transform: translateY(-5px) rotateX(5deg);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  border-color: #FFD700; /* Full yellow border on hover */
+  border-color: #1E90FF; /* Blue border instead of yellow */
 }
 
 /* Active card state */
@@ -80,12 +80,12 @@ body {
 
 /* Glowing text effect */
 .glow {
-  text-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Yellow glow */
+  text-shadow: 0 0 15px rgba(30, 144, 255, 0.7); /* Blue glow instead of yellow */
 }
 
 /* Gradient text effect */
 .text-gradient {
-  background: linear-gradient(to right, #FFD700, #FFC107); /* Yellow gradient */
+  background: linear-gradient(to right, #1E90FF, #0066CC); /* Blue gradient instead of yellow */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -93,15 +93,15 @@ body {
 
 /* Alternative text colors */
 .text-alt-purple {
-  color: #FFD700; /* Changed to yellow */
+  color: #1E90FF; /* Changed to blue */
 }
 
 .text-alt-blue {
-  color: #FFC107; /* Changed to amber yellow */
+  color: #0066CC; /* Changed to darker blue */
 }
 
 .text-alt-pink {
-  color: #FFEB3B; /* Changed to light yellow */
+  color: #87CEFA; /* Changed to light blue */
 }
 
 /* Fade-in animation */
@@ -163,14 +163,14 @@ body {
 
 /* High contrast text for better readability */
 .high-contrast-text {
-  color: #FFD700; /* Bright yellow */
+  color: #1E90FF; /* Bright blue instead of yellow */
   text-shadow: 0 0 2px #000; /* Black outline */
 }
 
 /* Simple card styles */
 .simple-card {
   background-color: #121212;
-  border: 1px solid #FFD700;
+  border: 1px solid #1E90FF; /* Blue border instead of yellow */
   border-radius: 0.5rem;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -179,12 +179,12 @@ body {
 
 .simple-card:hover {
   background-color: #1a1a1a;
-  border-color: #FFC107;
+  border-color: #0066CC; /* Darker blue on hover */
 }
 
 /* High visibility button */
 .high-vis-button {
-  background-color: #FFD700;
+  background-color: #1E90FF; /* Blue instead of yellow */
   color: #000;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -193,6 +193,6 @@ body {
 }
 
 .high-vis-button:hover {
-  background-color: #FFC107;
+  background-color: #0066CC; /* Darker blue on hover */
   transform: translateY(-2px);
 }
