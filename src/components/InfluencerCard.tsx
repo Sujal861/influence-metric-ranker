@@ -64,6 +64,7 @@ export default function InfluencerCard({
                 const target = e.target as HTMLImageElement;
                 target.src = '/placeholder.svg';
               }}
+              style={{ backgroundColor: '#000', objectFit: 'cover' }}
             />
           )}
           
