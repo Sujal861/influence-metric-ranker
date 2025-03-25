@@ -50,15 +50,22 @@ export default function InfluencerCard({
             aria-hidden="true"
           />
           
-          <img
-            src={influencer.imageUrl}
-            alt={influencer.name}
-            className={cn(
-              "w-full h-full object-cover transition-transform duration-700",
-              isHovered ? "scale-110" : "scale-100"
-            )}
-            loading="lazy"
-          />
+          {influencer.imageUrl && (
+            <img
+              src={influencer.imageUrl}
+              alt={influencer.name}
+              className={cn(
+                "w-full h-full object-cover transition-transform duration-700",
+                isHovered ? "scale-110" : "scale-100"
+              )}
+              loading="lazy"
+              onError={(e) => {
+                // Fallback to a placeholder if image fails to load
+                const target = e.target as HTMLImageElement;
+                target.src = '/placeholder.svg';
+              }}
+            />
+          )}
           
           <div className="absolute top-3 right-3 z-20">
             <div className={cn(
