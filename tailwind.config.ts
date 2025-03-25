@@ -66,10 +66,10 @@ export default {
 				influence: {
 					light: '#f8f9fa',
 					dark: '#212529',
-					accent: '#1E90FF', // Changed to Dodger Blue
-					secondaryAccent: '#0066CC', // Changed to darker blue
+					accent: '#1E90FF', // Dodger Blue
+					secondaryAccent: '#0066CC', // Darker blue
 					neutral: '#8e8e93',
-					success: '#1E90FF', // Changed to blue
+					success: '#1E90FF', // Blue for success
 					warning: '#ff9500',
 					error: '#ff3b30',
 				}

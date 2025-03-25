@@ -101,7 +101,7 @@ export default function InfluencerCard({
           )}>{influencer.name}</h3>
           <p className={cn(
             "text-sm mb-4 line-clamp-1",
-            isClicked ? "text-purple-300" : "text-muted-foreground"
+            isClicked ? "text-blue-300" : "text-muted-foreground"
           )}>{influencer.title}</p>
           
           <div className="space-y-2">
